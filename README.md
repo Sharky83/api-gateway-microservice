@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 Run the gateway:
 ```
-uvicorn api_gateway:app --reload --port 3001
+uvicorn app.api_gateway:app --reload --port 3001
 ```
 
 ### Docker
