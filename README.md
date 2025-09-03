@@ -1,10 +1,9 @@
-
 # API Gateway Microservice
 
 This is a production-ready FastAPI-based API Gateway microservice for routing, rate limiting, monitoring, and proxying requests to backend microservices.
 
 ## Features
-- Centralized routing and proxy logic
+- Centralised routing and proxy logic
 - Rate limiting (via external microservice)
 - Monitoring and logging
 - Robust error handling
@@ -71,5 +70,5 @@ docker compose run --rm api-gateway pytest tests/
 - Add more backend services by updating `.env` and `config.py`.
 - Integrate with monitoring tools (Prometheus, Grafana, etc.)
 
-## License
+## Licence
 MIT
