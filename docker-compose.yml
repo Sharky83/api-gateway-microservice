@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  api-gateway:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - PYTHONUNBUFFERED=1
+  # depends_on:
+  #   - service1
+  #   - service2
+    restart: unless-stopped
+    networks:
+      - gateway-net
+  # Example backend service
+  # service1:
+  #   image: your-backend-image
+  #   ports:
+  #     - "8001:8001"
+  #   networks:
+  #     - gateway-net
+networks:
+  gateway-net:
+    driver: bridge

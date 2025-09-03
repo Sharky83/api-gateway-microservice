@@ -1,0 +1,14 @@
+[project]
+name = "api-gateway-microservice"
+version = "0.1.0"
+description = "API Gateway microservice with FastAPI, Uvicorn, Gunicorn"
+authors = ["Your Name <your.email@example.com>"]
+
+[project.dependencies]
+fastapi = "*"
+uvicorn = "*"
+gunicorn = "*"
+httpx = "*"
+pytest = "*"
+pytest-asyncio = "*"
+python-dotenv = "*"
